@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Mermaid";
+  src: local("Mermaid"), url(~assets/fonts/Mermaid1001.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(~assets/fonts/Montserrat-Regular.ttf) format("truetype");
+}
