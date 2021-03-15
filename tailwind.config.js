@@ -21,7 +21,15 @@ module.exports = {
       'serif': ['Mermaid', 'ui-serif'],
       'sans': ['Montserrat', 'ui-sans-serif']
     },
-    extend: {}
+    container: {
+      center: true,
+    },
+
+    extend: {
+      colors: {
+        black: '#1F1E1A'
+      },
+    }
   },
   variants: {},
   plugins: [],
