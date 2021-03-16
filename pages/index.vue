@@ -51,7 +51,17 @@
     <!-- Video Section -->
     <div class="flex flex-col mt-10">
       <h1 class="mb-5 font-serif text-3xl">Video</h1>
-      <p>Iya ii nanti video</p>
+      <div class="flex justify-center">
+        <div class="w-10/12">
+          <!-- youtube div element -->
+          <vue-plyr>
+            <div
+              data-plyr-provider="youtube"
+              data-plyr-embed-id="H4p7fJGHCI8"
+            ></div>
+          </vue-plyr>
+        </div>
+      </div>
     </div>
     <!-- End Video Section -->
   </div>
