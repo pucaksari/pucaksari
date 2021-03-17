@@ -3,33 +3,14 @@
     <div class="container">
       <Navbar />
       <!-- Hero Section -->
-      <div class="flex flex-col py-24">
-        <h1 class="font-serif text-6xl">
-          Temukan keindahan dan <br />
-          keberagaman budaya
-        </h1>
-        <div class="flex">
-          <div class="w-16 h-1 mt-2 mr-3 bg-white"></div>
-          <p class="w-1/2">
-            Parawisely membantu kamu untuk memilih tempat wisata di Indonesia
-            yang kaya akan budaya dan keberagaman serta petualangan yang
-            menunggumu di Indonesia.
-          </p>
-        </div>
-
-        <Button class="mt-12 ml-20" to="#" text="Selengkapnya" />
-      </div>
+      <Hero />
       <!-- End Hero Section -->
       <!-- About Section -->
       <div class="relative flex items-center py-48 about">
         <div class="w-1/2">
           <div class="h-64 bg-gray"></div>
         </div>
-        <img
-          class="absolute ml-56 bg-cover"
-          src="~assets/images/balisvg.svg"
-          alt=""
-        />
+        <img class="absolute ml-56 bg-cover" src="~assets/images/balisvg.svg" />
 
         <div class="flex flex-col w-1/2 ml-5">
           <h1 class="mb-5 font-serif text-5xl">
@@ -122,27 +103,7 @@
       </div>
       <!-- End Section Article -->
       <!-- Footer Section-->
-      <div class="flex flex-col py-12 mt-56 text-center">
-        <h1 class="font-serif text-6xl">
-          Ada Pertanyaan, Keluhan, atau Saran ?
-        </h1>
-        <p class="w-6/12 mx-auto">
-          Pesan Anda akan dikirimkan melalui Aplikasi Telegram ke pengurus Desa
-          Pucaksari. Yuk jangan ragu untuk diskusi dengan kami!
-        </p>
-        <form action="#">
-          <div class="relative flex w-10/12 mx-auto mt-10 mb-4">
-            <input
-              type="text"
-              class="relative flex-1 flex-grow flex-shrink w-px h-16 px-3 leading-normal text-black border rounded rounded-r-none border-red"
-              placeholder="Tuliskan pesanmu disini"
-            />
-            <div class="flex -mr-px">
-              <button type="submit" class="px-3">Kirim</button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <Footer />
       <!-- End Footer Section -->
     </div>
   </div>
