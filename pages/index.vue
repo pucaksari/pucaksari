@@ -1,58 +1,55 @@
 <template>
-  <div class="container pt-10 text-white">
-    <Navbar />
-    <!-- Hero Section -->
-    <div class="flex flex-col py-24">
-      <h1 class="font-serif text-6xl">
-        Temukan keindahan dan <br />
-        keberagaman budaya
-      </h1>
-      <div class="flex">
-        <div class="w-16 h-1 mt-2 mr-3 bg-white"></div>
-        <p class="w-1/2">
-          Parawisely membantu kamu untuk memilih tempat wisata di Indonesia yang
-          kaya akan budaya dan keberagaman serta petualangan yang menunggumu di
-          Indonesia.
-        </p>
-      </div>
-      <a class="pt-5 ml-20" href="#">
-        <span class="px-4 py-2 border border-white">Selengkapnya</span>
-      </a>
-    </div>
-    <!-- End Hero Section -->
-    <!-- About Section -->
-    <div class="relative flex items-center py-48 about">
-      <div class="w-1/2">
-        <div class="h-64 bg-gray-800"></div>
-      </div>
-      <img
-        class="absolute ml-56 bg-cover"
-        src="~assets/images/balisvg.svg"
-        alt=""
-      />
-
-      <div class="flex flex-col w-1/2 ml-5">
-        <h1 class="mb-5 font-serif text-3xl">
-          <span class="border-b border-white">Pucak Sari</span>
+  <div class="pt-10 text-white">
+    <div class="container">
+      <Navbar />
+      <!-- Hero Section -->
+      <div class="flex flex-col py-24">
+        <h1 class="font-serif text-6xl">
+          Temukan keindahan dan <br />
+          keberagaman budaya
         </h1>
-        <p class="relative text-about">
-          Desa Angseri memiliki luas 758,160 Km2. Desa Angseri dibagi menjadi 4
-          dusun dengan 3 desa pekraman. Dilihat dari kondisi geografisnya,
-          wilayah Desa Angseri merupakan dataran dengan ketinggian kurang lebih
-          640 meter di atas permukaan laut, dengan curah hujan rata-rata 3,458
-          mm/tahun.
-        </p>
-        <a class="pt-5" href="#">
-          <span class="px-4 py-2 border border-white">Telusuri</span>
-        </a>
+        <div class="flex">
+          <div class="w-16 h-1 mt-2 mr-3 bg-white"></div>
+          <p class="w-1/2">
+            Parawisely membantu kamu untuk memilih tempat wisata di Indonesia
+            yang kaya akan budaya dan keberagaman serta petualangan yang
+            menunggumu di Indonesia.
+          </p>
+        </div>
+
+        <Button class="mt-12 ml-20" to="#" text="Selengkapnya" />
       </div>
-    </div>
-    <!-- End About Section -->
-    <!-- Video Section -->
-    <div class="flex flex-col mt-10">
-      <h1 class="mb-5 font-serif text-3xl">Video</h1>
-      <div class="flex justify-center">
-        <div class="w-10/12">
+      <!-- End Hero Section -->
+      <!-- About Section -->
+      <div class="relative flex items-center py-48 about">
+        <div class="w-1/2">
+          <div class="h-64 bg-gray"></div>
+        </div>
+        <img
+          class="absolute ml-56 bg-cover"
+          src="~assets/images/balisvg.svg"
+          alt=""
+        />
+
+        <div class="flex flex-col w-1/2 ml-5">
+          <h1 class="mb-5 font-serif text-5xl">
+            <span class="border-b border-red">Pucak Sari</span>
+          </h1>
+          <p class="relative w-9/12 text-about">
+            Desa Angseri memiliki luas 758,160 Km2. Desa Angseri dibagi menjadi
+            4 dusun dengan 3 desa pekraman. Dilihat dari kondisi geografisnya,
+            wilayah Desa Angseri merupakan dataran dengan ketinggian kurang
+            lebih 640 meter di atas permukaan laut, dengan curah hujan rata-rata
+            3,458 mm/tahun.
+          </p>
+          <Button class="mt-10" to="#" text="Telusuri" />
+        </div>
+      </div>
+      <!-- End About Section -->
+      <!-- Video Section -->
+      <div class="flex flex-col mt-10">
+        <h1 class="mb-5 font-serif text-5xl">Video</h1>
+        <div>
           <!-- youtube div element -->
           <vue-plyr>
             <div
@@ -62,8 +59,92 @@
           </vue-plyr>
         </div>
       </div>
+      <!-- End Video Section -->
+      <!-- Gallery Section -->
+      <div class="flex flex-col justify-center mt-20 text-center">
+        <h1 class="font-serif text-5xl">Galeri Foto</h1>
+        <div class="w-1/2 mx-auto my-5">
+          <p>
+            Apakah itu semua adalah asli ? ataukah itu ilusi ? walau indah tapi
+            tak punya arti yang dapat dipahami
+          </p>
+        </div>
+        <Button class="mt-10 mb-20" to="#" text="Lihat lebih banyak" />
+      </div>
     </div>
-    <!-- End Video Section -->
+    <!-- End Tag Root Div -->
+    <Gallery />
+    <!-- End Gallery Section -->
+    <div class="container">
+      <!-- Section Article -->
+      <div class="flex flex-col mt-20">
+        <div>
+          <h3>KUMPULAN BERITA</h3>
+          <h1 class="w-6/12 font-serif text-5xl">
+            Informasi, Pengumaman, Acara
+          </h1>
+          <div class="flex justify-between">
+            <div class="flex flex-col justify-center w-6/12 p-10 text-center">
+              <img src="~assets/images/desa/DSC00407.jpg" alt="" />
+              <span class="mt-10"><p>02 Oktober 2020</p></span>
+              <h1
+                class="w-1/2 mx-auto my-5 font-serif text-4xl border-b border-red"
+              >
+                Desa Indah dan Asri di Bali
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere
+                ut risus, feugiat fames vulputate vel ipsum. Sodales ut libero
+                vel id non sodales augue eros.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center w-6/12 p-10 text-center -mt-84"
+            >
+              <img src="~assets/images/desa/DSC00567.jpg" alt="" />
+              <span class="mt-10"><p>02 Oktober 2020</p></span>
+              <h1
+                class="w-1/2 mx-auto my-5 font-serif text-4xl border-b border-red"
+              >
+                Desa Indah dan Asri di Bali
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere
+                ut risus, feugiat fames vulputate vel ipsum. Sodales ut libero
+                vel id non sodales augue eros.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-end -mt-20">
+            <Button text="Selengkapnya" />
+          </div>
+        </div>
+      </div>
+      <!-- End Section Article -->
+      <!-- Footer Section-->
+      <div class="flex flex-col py-12 mt-56 text-center">
+        <h1 class="font-serif text-6xl">
+          Ada Pertanyaan, Keluhan, atau Saran ?
+        </h1>
+        <p class="w-6/12 mx-auto">
+          Pesan Anda akan dikirimkan melalui Aplikasi Telegram ke pengurus Desa
+          Pucaksari. Yuk jangan ragu untuk diskusi dengan kami!
+        </p>
+        <form action="#">
+          <div class="relative flex w-10/12 mx-auto mt-10 mb-4">
+            <input
+              type="text"
+              class="relative flex-1 flex-grow flex-shrink w-px h-16 px-3 leading-normal text-black border rounded rounded-r-none border-red"
+              placeholder="Tuliskan pesanmu disini"
+            />
+            <div class="flex -mr-px">
+              <button type="submit" class="px-3">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Footer Section -->
+    </div>
   </div>
 </template>
 

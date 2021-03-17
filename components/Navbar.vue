@@ -1,7 +1,9 @@
 <template>
-  <div class="flex items-center justify-between pb-10 border-b-2 border-black">
+  <div
+    class="container flex items-center justify-between pb-10 border-b-2 border-black"
+  >
     <div class="flex">
-      <h1 class="font-serif text-3xl">Pucak Sari</h1>
+      <h1 class="font-serif text-4xl">Pucak Sari</h1>
     </div>
     <div class="grid grid-flow-col gap-6">
       <a href="#">Home</a>
