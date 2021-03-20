@@ -3,7 +3,7 @@
     <div
       class="flex flex-col mt-32 text-center lg:pt-32 lg:mt-56 footer--background"
     >
-      <div class="container">
+      <div class="container px-4">
         <div class="flex flex-col">
           <h1 class="font-serif text-4xl lg:text-6xl">
             Ada Pertanyaan, Keluhan, atau Saran ?
@@ -28,7 +28,7 @@
           </form>
         </div>
         <div
-          class="flex flex-col pb-24 mx-10 mt-20 text-left border-b lg:flex-row lg:justify-between border-red"
+          class="flex flex-col pb-24 mt-20 text-left border-b lg:mx-10 lg:flex-row lg:justify-between border-red"
         >
           <div class="flex flex-col mt-10 lg:w-4/12">
             <h1 class="font-serif text-2xl lg:text-4xl">Pucak Sari</h1>
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col py-5 text-sm font-bold text-center lg:text-base mx-ato"
+        class="flex flex-col px-4 py-5 text-xs font-bold text-center lg:text-base mx-ato"
       >
         <p>Copyright 2021 Desa Pucaksari. All Right Reserved</p>
       </div>

@@ -5,10 +5,10 @@
         <div class="img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[0]}.jpg`)" alt="" />
         </div>
-        <div class="-mt-10 img-gallery">
+        <div class="-mt-5 lg:-mt-10 img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[1]}.jpg`)" alt="" />
         </div>
-        <div class="mt-10 img-gallery">
+        <div class="mt-5 lg:mt-10 img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[2]}.jpg`)" alt="" />
         </div>
         <div class="img-gallery">
@@ -17,10 +17,10 @@
         <div class="img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[4]}.jpg`)" alt="" />
         </div>
-        <div class="-mt-10 img-gallery">
+        <div class="-mt-5 lg:-mt-10 img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[5]}.jpg`)" alt="" />
         </div>
-        <div class="mt-10 img-gallery">
+        <div class="mt-5 lg:mt-10 img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[6]}.jpg`)" alt="" />
         </div>
         <div class="img-gallery">
@@ -29,7 +29,7 @@
         <div class="img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[8]}.jpg`)" alt="" />
         </div>
-        <div class="-mt-10 img-gallery">
+        <div class="-mt-5 lg:-mt-10 img-gallery">
           <img :src="require(`~/assets/images/desa/${asset[9]}.jpg`)" alt="" />
         </div>
       </div>
