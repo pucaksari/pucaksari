@@ -66,7 +66,7 @@
           <h1 class="font-serif text-2xl lg:w-6/12 lg:text-5xl">
             Informasi, Pengumaman, Acara
           </h1>
-          <div class="flex flex-col lg:justify-between">
+          <div class="flex flex-col lg:flex-row lg:justify-between">
             <div
               class="flex flex-col justify-center mt-10 text-center lg:mt-0 lg:p-10 lg:w-6/12"
             >
