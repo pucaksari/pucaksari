@@ -72,7 +72,7 @@ export default {};
 
 <style>
 .footer--background {
-  background: url("~assets/images/web/bg.jpg") no-repeat;
+  background: url("~assets/images/web/bg.jpg") no-repeat center;
   background-size: cover;
 }
 </style>
