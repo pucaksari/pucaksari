@@ -34,7 +34,7 @@ export default {
   plugins: [{
     src: '~/plugins/vue-plyr',
     mode: 'client'
-  }],
+  }, ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

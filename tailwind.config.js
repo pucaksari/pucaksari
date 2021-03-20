@@ -30,9 +30,15 @@ module.exports = {
       brown: '#B37B6A'
     },
     container: {
-      center: true
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '4rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
-
     extend: {
       spacing: {
         '72': '18rem',

@@ -1,16 +1,19 @@
 <template>
   <div
-    class="container flex items-center justify-between pb-10 border-b-2 border-black"
+    class="container flex items-center justify-between py-10 lg:border-b-2 border-red"
   >
     <div class="flex">
-      <h1 class="font-serif text-4xl">Pucak Sari</h1>
+      <h1 class="font-serif text-xl lg:text-4xl">Pucak Sari</h1>
     </div>
-    <div class="grid grid-flow-col gap-6">
-      <a href="#">Home</a>
-      <a href="#">Pura</a>
-      <a href="#">Hasil Desa</a>
-      <a href="#">Lokasi</a>
-      <a href="#">Kontak</a>
+    <div class="flex">
+      <div class="hidden grid-flow-col gap-16 lg:grid">
+        <a href="#">Home</a>
+        <a href="#">Pura</a>
+        <a href="#">Hasil Desa</a>
+        <a href="#">Lokasi</a>
+        <a href="#">Kontak</a>
+      </div>
+      <div class="lg:hidden">menu</div>
     </div>
   </div>
 </template>
