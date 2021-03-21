@@ -1,5 +1,8 @@
 <template>
-  <div class="pt-10">
+  <div>
+    <!-- Hero Section -->
+    <Hero />
+    <!-- End Hero Section -->
     <!-- About Section -->
     <div class="relative lg:py-48 about">
       <div
@@ -67,42 +70,11 @@
             Informasi, Pengumaman, Acara
           </h1>
           <div class="flex flex-col lg:flex-row lg:justify-between">
-            <div
-              class="flex flex-col justify-center mt-10 text-center lg:mt-0 lg:p-10 lg:w-6/12"
-            >
-              <img src="~assets/images/desa/DSC00407.jpg" alt="" />
-              <span class="mt-10"><p>02 Oktober 2020</p></span>
-              <nuxt-link
-                to="#"
-                class="mx-auto my-5 font-serif text-2xl border-b lg:w-1/2 lg:text-4xl border-red"
-              >
-                Desa Indah dan Asri di Bali
-              </nuxt-link>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere
-                ut risus, feugiat fames vulputate vel ipsum. Sodales ut libero
-                vel id non sodales augue eros.
-              </p>
-            </div>
-            <div
-              class="flex flex-col justify-center mt-10 text-center lg:p-10 lg:w-6/12 lg:-mt-84"
-            >
-              <img src="~assets/images/desa/DSC00567.jpg" alt="" />
-              <span class="mt-10"><p>02 Oktober 2020</p></span>
-              <h1
-                class="mx-auto my-5 font-serif text-2xl border-b lg:w-1/2 lg:text-4xl border-red"
-              >
-                Desa Indah dan Asri di Bali
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere
-                ut risus, feugiat fames vulputate vel ipsum. Sodales ut libero
-                vel id non sodales augue eros.
-              </p>
-            </div>
+            <Article />
+            <Article class="lg:-mt-84" />
           </div>
           <div class="flex justify-center mt-10 lg:justify-end lg:-mt-20">
-            <Button text="Selengkapnya" />
+            <Button to="artikel" text="Selengkapnya" />
           </div>
         </div>
       </div>

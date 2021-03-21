@@ -13,7 +13,7 @@
             Desa Pucaksari. Yuk jangan ragu untuk diskusi dengan kami!
           </p>
           <form action="#">
-            <div class="relative flex w-10/12 mx-auto mt-10 mb-4">
+            <div class="relative flex mx-auto mt-10 mb-4 lg:w-10/12">
               <input
                 type="text"
                 class="relative flex-1 flex-grow flex-shrink w-px h-16 px-3 leading-normal text-black border rounded rounded-r-none"

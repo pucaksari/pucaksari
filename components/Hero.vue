@@ -1,9 +1,13 @@
 <template>
   <div>
-    <div class="relative flex flex-col px-4 mb-24 hero-banner">
-      <div class="z-10">
+    <video-background
+      :src="require('~/assets/videos/notitle.mp4')"
+      style="height: 100vh"
+      overlay="rgba(0, 0, 0, 0.562)"
+    >
+      <div class="relative flex flex-col h-screen px-4 mb-24 hero-banner">
         <Navbar class="z-10" />
-        <div class="container z-20 flex flex-col mt-12 lg:mt-32">
+        <div class="container z-20 flex flex-col mt-12 lg:my-32">
           <h1 class="font-serif text-3xl lg:text-6xl">
             Temukan keindahan dan <br />
             keberagaman budaya
@@ -17,18 +21,10 @@
             </p>
           </div>
 
-          <Button class="mt-12 lg:ml-20" to="#" text="Selengkapnya" />
+          <Button class="my-12 lg:ml-20" to="#" text="Selengkapnya" />
         </div>
       </div>
-      <video
-        muted
-        autoplay
-        loop
-        class="absolute hidden -mx-4 bg-black opacity-25 lg:block video-bg"
-      >
-        <source src="~assets/videos/notitle.mp4" type="video/mp4" />
-      </video>
-    </div>
+    </video-background>
   </div>
 </template>
 
@@ -41,6 +37,6 @@ export default {};
   z-index: 1;
 }
 .hero-banner {
-  background-color: rgba(0, 0, 0, 0.123);
+  background-color: rgba(0, 0, 0, 0.562);
 }
 </style>
