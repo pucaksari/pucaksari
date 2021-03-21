@@ -16,6 +16,7 @@
     "vue-responsive-video-background-player": "^1.2.2"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.4.3"
+    "@nuxtjs/tailwindcss": "^3.4.3",
+    "nuxt-gsap-module": "^1.2.1"
   }
 }

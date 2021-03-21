@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-blank />
+    <hero-blank text="Berita baru di Desa" />
     <div class="container grid grid-cols-1 px-4 lg:grid-cols-2">
       <Article />
       <Article />

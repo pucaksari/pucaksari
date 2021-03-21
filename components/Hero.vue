@@ -8,7 +8,7 @@
       >
         <div class="relative flex flex-col px-4 mb-24 hero-banner">
           <Navbar class="z-10" />
-          <div class="container z-20 flex flex-col mt-12 lg:my-32">
+          <div class="container flex flex-col mt-12 lg:my-32">
             <h1 class="font-serif text-3xl lg:text-6xl">
               Temukan keindahan dan <br />
               keberagaman budaya
@@ -35,10 +35,4 @@ export default {};
 </script>
 
 <style>
-.video-bg {
-  z-index: 1;
-}
-.hero-banner {
-  background-color: rgba(0, 0, 0, 0.562);
-}
 </style>
