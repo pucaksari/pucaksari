@@ -1,7 +1,9 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <Hero />
+    <client-only>
+      <Hero />
+    </client-only>
     <!-- End Hero Section -->
     <!-- About Section -->
     <div class="relative lg:py-48 about">
