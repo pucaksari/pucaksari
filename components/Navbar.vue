@@ -3,7 +3,7 @@
     class="container flex items-center justify-between py-10 lg:border-b-2 border-red"
   >
     <div class="flex">
-      <h1 class="font-serif text-xl lg:text-4xl">Pucaksari</h1>
+      <h1 class="font-serif text-3xl lg:text-4xl">Pucaksari</h1>
     </div>
     <div class="flex">
       <div class="hidden grid-flow-col gap-16 lg:grid">
@@ -13,14 +13,63 @@
         <nuxt-link to="berita">Berita</nuxt-link>
         <nuxt-link to="galeri">Galeri</nuxt-link>
       </div>
-      <div @click="toggleMenu" class="z-20 cursor-pointer menu lg:hidden">
-        {{ open ? "close" : "menu" }}
-      </div>
+      <!-- Mobile Menu -->
       <div
-        class="fixed top-0 z-10 w-screen h-screen bg-black link-menu"
-        :class="{ 'left-0': !open }"
+        @click="open ? closeMenu() : openMenu()"
+        class="fixed z-20 cursor-pointer menu lg:hidden"
       >
-        <nuxt-link to="#">Test</nuxt-link>
+        <svg
+          v-if="open"
+          height="40"
+          viewBox="0 0 21 21"
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+          class="bg-black"
+        >
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            transform="translate(5 5)"
+          >
+            <path d="m.5 10.5 10-10" />
+            <path d="m10.5 10.5-10-10z" />
+          </g>
+        </svg>
+
+        <svg
+          v-else
+          height="40"
+          viewBox="0 0 21 21"
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+          class="bg-black"
+        >
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m4.5 7.5h12" />
+            <path d="m4.498 10.5h11.997" />
+            <path d="m4.5 13.5h11.995" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div
+      class="fixed top-0 z-10 w-screen h-screen pt-32 pl-10 bg-black lg:hidden link-menu"
+    >
+      <div class="grid gap-10 text-2xl">
+        <nuxt-link to="/">Beranda</nuxt-link>
+        <nuxt-link to="pura">Pura</nuxt-link>
+        <nuxt-link to="komoditas">Komoditas</nuxt-link>
+        <nuxt-link to="berita">Berita</nuxt-link>
+        <nuxt-link to="galeri">Galeri</nuxt-link>
       </div>
     </div>
   </div>
@@ -34,20 +83,19 @@ export default {
     };
   },
   methods: {
-    toggleMenu() {
+    openMenu() {
       const gsap = this.$gsap;
-
-      if (open) {
-        gsap.to(".link-menu", {
-          duration: 1,
-          x: "100%",
-        });
-      } else {
-        gsap.to(".link-menu", {
-          duration: 1,
-          x: "-100%",
-        });
-      }
+      gsap.to(".link-menu", {
+        duration: 0.3,
+        x: "100%",
+      });
+      this.open = !this.open;
+    },
+    closeMenu() {
+      this.$gsap.to(".link-menu", {
+        duration: 0.3,
+        x: "0",
+      });
       this.open = !this.open;
     },
   },
@@ -55,4 +103,11 @@ export default {
 </script>
 
 <style>
+.menu {
+  right: 5%;
+  top: 6%;
+}
+.link-menu {
+  right: 100%;
+}
 </style>
