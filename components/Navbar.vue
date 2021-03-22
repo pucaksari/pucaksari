@@ -122,6 +122,10 @@ export default {
   right: 100%;
 }
 
+.mobile-active {
+  @apply text-red;
+}
+
 .nuxt-link-exact-active {
   position: relative;
   overflow: hidden;

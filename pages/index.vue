@@ -10,7 +10,7 @@
       <div
         class="container flex flex-col items-center px-4 lg:py-5 lg:flex-row"
       >
-        <div class="">
+        <div class="mt-24 lg:mt-0">
           <img data-src="~assets/images/web/map_pucaksari.png" v-lazy-load />
         </div>
 
