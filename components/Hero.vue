@@ -8,7 +8,7 @@
         class="h-screen"
         overlay="rgba(0, 0, 0, 0.562)"
       >
-        <div class="relative flex flex-col px-4 mb-24 hero-banner">
+        <div class="relative flex flex-col px-4 mb-24">
           <Navbar class="z-10" />
           <div class="container flex flex-col mt-12 lg:my-32">
             <h1 class="font-serif text-3xl lg:text-6xl">
@@ -40,14 +40,5 @@ export default {};
 .video-buffering {
   background-size: cover;
   background-position: center;
-}
-
-@screen lg {
-  .video-wrapper {
-    display: block !important;
-  }
-}
-.vide-wrapper {
-  display: none !important;
 }
 </style>
