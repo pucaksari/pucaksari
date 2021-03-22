@@ -36,12 +36,14 @@
         <h1 class="mb-5 font-serif text-4xl lg:text-5xl">Video</h1>
         <div>
           <!-- youtube div element -->
-          <vue-plyr>
-            <div
-              data-plyr-provider="youtube"
-              data-plyr-embed-id="EI-P-Op9_Xk"
-            ></div>
-          </vue-plyr>
+          <client-only>
+            <vue-plyr>
+              <div
+                data-plyr-provider="youtube"
+                data-plyr-embed-id="EI-P-Op9_Xk"
+              ></div>
+            </vue-plyr>
+          </client-only>
         </div>
       </div>
       <!-- End Video Section -->
