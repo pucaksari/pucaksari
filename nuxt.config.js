@@ -38,6 +38,10 @@ export default {
     {
       src: '~/plugins/vue-video-background',
       ssr: false
+    },
+    {
+      src: '~/plugins/vue-viewer',
+      ssr: false
     }
   ],
 
@@ -48,13 +52,18 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-gsap-module'
+    'nuxt-gsap-module',
+    '@aceforth/nuxt-optimized-images'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    ['nuxt-lazy-load', {
+      directiveOnly: true,
+      defaultImage: '/default-image.png',
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -63,6 +72,9 @@ export default {
   // Tailwinds module configuration
   tailwindcss: {
     jit: true
+  },
+  optimizedImages: {
+    optimizeImages: true
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

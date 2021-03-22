@@ -11,7 +11,7 @@
         class="container flex flex-col items-center px-4 lg:py-5 lg:flex-row"
       >
         <div class="">
-          <img src="~assets/images/web/map_pucaksari.png" />
+          <img data-src="~assets/images/web/map_pucaksari.png" v-lazy-load />
         </div>
 
         <div class="flex flex-col lg:ml-5 lg:w-1/2">
@@ -25,7 +25,11 @@
             lebih 640 meter di atas permukaan laut, dengan curah hujan rata-rata
             3,458 mm/tahun.
           </p>
-          <Button class="mt-10" to="#" text="Telusuri" />
+          <Button
+            class="mt-10"
+            to="https://www.google.com/maps/place/Pucaksari,+Busungbiu,+Kabupaten+Buleleng,+Bali/@-8.3097545,114.9197294,13z/data=!3m1!4b1!4m5!3m4!1s0x2dd180f92ed64629:0x5030bfbca830440!8m2!3d-8.2990663!4d114.9576197"
+            text="Telusuri"
+          />
         </div>
       </div>
     </div>
@@ -78,7 +82,7 @@
             <Article class="lg:-mt-84" />
           </div>
           <div class="flex justify-center mt-10 lg:justify-end lg:-mt-20">
-            <Button to="artikel" text="Selengkapnya" />
+            <Button to="berita" text="Selengkapnya" />
           </div>
         </div>
       </div>
