@@ -16,7 +16,7 @@
       <!-- Mobile Menu -->
       <div
         @click="open ? closeMenu() : openMenu()"
-        class="fixed z-20 cursor-pointer menu lg:hidden"
+        class="fixed z-30 cursor-pointer menu lg:hidden"
       >
         <svg
           v-if="open"
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div
-      class="fixed top-0 z-10 w-screen h-screen pt-32 pl-10 bg-black lg:hidden link-menu"
+      class="fixed top-0 z-20 w-screen h-screen pt-32 pl-10 bg-black lg:hidden link-menu"
     >
       <div class="grid gap-10 text-2xl">
         <nuxt-link to="/">Beranda</nuxt-link>
