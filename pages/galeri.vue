@@ -19,7 +19,7 @@
         <div
           v-for="src in countImage"
           :key="src"
-          class="h-64 bg-center bg-no-repeat bg-cover"
+          class="h-64 overflow-hidden bg-center bg-no-repeat bg-cover gambar"
           :style="{ backgroundImage: `url(${backgroundUrl(src)})` }"
         >
           <img
@@ -42,13 +42,12 @@
   </div>
 </template>
 
-<style>
-</style>
 
 <script>
 import "viewerjs/dist/viewer.css";
 
 export default {
+  mounted() {},
   data() {
     return {
       countImage: 9,
