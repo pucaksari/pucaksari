@@ -37,13 +37,10 @@
         <div>
           <!-- youtube div element -->
           <vue-plyr>
-            <video>
-              <source
-                size="720"
-                src="~assets/videos/title.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <div
+              data-plyr-provider="youtube"
+              data-plyr-embed-id="EI-P-Op9_Xk"
+            ></div>
           </vue-plyr>
         </div>
       </div>

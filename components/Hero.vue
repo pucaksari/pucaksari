@@ -2,6 +2,7 @@
   <client-only>
     <div>
       <video-background
+        ref="videobackground"
         :src="require('~/assets/videos/notitle.mp4')"
         :poster="require('~/assets/images/web/bg.jpg')"
         class="h-screen"
@@ -36,8 +37,17 @@ export default {};
 </script>
 
 <style>
-.video-background {
+.video-buffering {
   background-size: cover;
   background-position: center;
+}
+
+@screen lg {
+  .video-wrapper {
+    display: block !important;
+  }
+}
+.vide-wrapper {
+  display: none !important;
 }
 </style>
