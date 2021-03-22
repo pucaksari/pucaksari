@@ -27,11 +27,14 @@
             lebih 640 meter di atas permukaan laut, dengan curah hujan rata-rata
             3,458 mm/tahun.
           </p>
-          <Button
+          <a
             class="mt-10"
-            to="https://www.google.com/maps/place/Pucaksari,+Busungbiu,+Kabupaten+Buleleng,+Bali/@-8.3097545,114.9197294,13z/data=!3m1!4b1!4m5!3m4!1s0x2dd180f92ed64629:0x5030bfbca830440!8m2!3d-8.2990663!4d114.9576197"
-            text="Telusuri"
-          />
+            target="_blank"
+            href="https://www.google.com/maps/place/Pucaksari,+Busungbiu,+Kabupaten+Buleleng,+Bali/@-8.3097545,114.9197294,13z/data=!3m1!4b1!4m5!3m4!1s0x2dd180f92ed64629:0x5030bfbca830440!8m2!3d-8.2990663!4d114.9576197"
+            ><span class="px-8 py-4 text-xs lg:text-base bg-red"
+              >Telusuri</span
+            ></a
+          >
         </div>
       </div>
     </div>
