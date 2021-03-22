@@ -1,5 +1,5 @@
 <template>
-  <client-only>
+  <client-only placeholder="Loading...">
     <div>
       <video-background
         :src="require('~/assets/videos/notitle.mp4')"

@@ -12,11 +12,11 @@
     </div>
     <div class="flex">
       <div class="hidden grid-flow-col gap-16 lg:grid">
-        <nuxt-link to="/">Home</nuxt-link>
-        <nuxt-link to="pura">Pura</nuxt-link>
-        <nuxt-link to="komoditas">Komoditas</nuxt-link>
-        <nuxt-link to="berita">Berita</nuxt-link>
-        <nuxt-link to="galeri">Galeri</nuxt-link>
+        <nuxt-link prefetch to="/">Home</nuxt-link>
+        <nuxt-link prefetch to="/pura">Pura</nuxt-link>
+        <nuxt-link prefetch to="/komoditas">Komoditas</nuxt-link>
+        <nuxt-link prefetch to="/berita">Berita</nuxt-link>
+        <nuxt-link prefetch to="/galeri">Galeri</nuxt-link>
       </div>
       <!-- Mobile Menu -->
       <div
@@ -70,15 +70,22 @@
       class="fixed top-0 z-20 w-screen h-screen pt-32 pl-10 bg-black lg:hidden link-menu"
     >
       <div class="grid gap-10 text-2xl">
-        <nuxt-link exact-active-class="mobile-active" to="/">Beranda</nuxt-link>
-        <nuxt-link exact-active-class="mobile-active" to="pura">Pura</nuxt-link>
-        <nuxt-link exact-active-class="mobile-active" to="komoditas"
+        <nuxt-link no-prefetch exact-active-class="mobile-active" to="/"
+          >Beranda</nuxt-link
+        >
+        <nuxt-link no-prefetch exact-active-class="mobile-active" to="/pura"
+          >Pura</nuxt-link
+        >
+        <nuxt-link
+          no-prefetch
+          exact-active-class="mobile-active"
+          to="/komoditas"
           >Komoditas</nuxt-link
         >
-        <nuxt-link exact-active-class="mobile-active" to="berita"
+        <nuxt-link no-prefetch exact-active-class="mobile-active" to="/berita"
           >Berita</nuxt-link
         >
-        <nuxt-link exact-active-class="mobile-active" to="galeri"
+        <nuxt-link no-prefetch exact-active-class="mobile-active" to="/galeri"
           >Galeri</nuxt-link
         >
       </div>
