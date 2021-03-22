@@ -9,5 +9,16 @@
   </div>
 </template>
 
+<script>
+export default {};
+</script>
 <style>
+.page-enter-active,
+.page-leave-active {
+  transition: 0.3s ease-in-out;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 </style>

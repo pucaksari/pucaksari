@@ -63,7 +63,7 @@
             tak punya arti yang dapat dipahami
           </p>
         </div>
-        <Button class="mt-10 mb-20" to="#" text="Lihat lebih banyak" />
+        <Button class="mt-10 mb-20" to="galeri" text="Lihat lebih banyak" />
       </div>
     </div>
     <!-- End Tag Root Div -->

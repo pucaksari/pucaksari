@@ -1,9 +1,9 @@
 <template>
   <div>
     <hero-blank text="Galeri Desa" />
-    <div class="container mt-32">
+    <div class="container px-4 mt-32">
       <div
-        class="grid grid-cols-3 gap-4"
+        class="grid gap-4 lg:grid-cols-3 place-items-stretch"
         v-viewer="{
           button: true,
           navbar: true,
@@ -16,33 +16,54 @@
           transition: true,
         }"
       >
-        <img
+        <div
           v-for="src in countImage"
           :key="src"
-          :src="require(`~/assets/images/galeri/${src}.jpg`)"
-          alt=""
-        />
+          class="h-64 bg-center bg-no-repeat bg-cover"
+          :style="{ backgroundImage: `url(${backgroundUrl(src)})` }"
+        >
+          <img
+            :src="require(`~/assets/images/galeri/${src}.jpg`)"
+            class="opacity-0 cursor-pointer"
+          />
+        </div>
       </div>
       <div class="flex justify-center mt-20">
-        <button @click="more" class="px-8 py-4 text-xs lg:text-base bg-red">
+        <button
+          v-if="countImage != maxCountImage"
+          @click="more"
+          class="px-8 py-4 text-xs lg:text-base bg-red"
+        >
           Lihat lebih banyak
         </button>
+        <div v-else></div>
       </div>
     </div>
   </div>
 </template>
 
+<style>
+</style>
+
 <script>
 import "viewerjs/dist/viewer.css";
+
 export default {
   data() {
     return {
       countImage: 9,
+      maxCountImage: 69,
     };
   },
   methods: {
+    backgroundUrl(src) {
+      return require(`~/assets/images/galeri/${src}.jpg`);
+    },
     more() {
-      this.countImage *= 2;
+      this.countImage += 9;
+      if (this.countImage > this.maxCountImage) {
+        this.countImage = 69;
+      }
     },
   },
 };

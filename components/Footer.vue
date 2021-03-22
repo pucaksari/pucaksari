@@ -41,11 +41,17 @@
           <div class="flex flex-col mt-10 lg:w-4/12 lg:ml-32">
             <h1 class="font-serif text-2xl lg:text-4xl">Navigasi</h1>
             <div class="grid grid-flow-row gap-2 text-sm lg:text-base">
-              <nuxt-link to="#">Home</nuxt-link>
-              <nuxt-link to="#">Pura</nuxt-link>
-              <nuxt-link to="#">Hasil Desa</nuxt-link>
-              <nuxt-link to="#">Lokasi</nuxt-link>
-              <nuxt-link to="#">Kontak</nuxt-link>
+              <nuxt-link exact-active-class="none" to="/">Home</nuxt-link>
+              <nuxt-link exact-active-class="none" to="pura">Pura</nuxt-link>
+              <nuxt-link exact-active-class="none" to="komoditas"
+                >Komoditas</nuxt-link
+              >
+              <nuxt-link exact-active-class="none" to="berita"
+                >Berita</nuxt-link
+              >
+              <nuxt-link exact-active-class="none" to="galeri"
+                >Galeri</nuxt-link
+              >
             </div>
           </div>
           <div class="flex flex-col mt-10 lg:w-4/12">
