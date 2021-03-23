@@ -17,7 +17,6 @@
     "nuxt": "^2.15.3",
     "nuxt-lazy-load": "^1.2.5",
     "v-viewer": "^1.5.1",
-    "vue-plyr": "^7.0.0",
     "vue-responsive-video-background-player": "^1.2.2",
     "vue-video-player": "^5.0.2"
   },
