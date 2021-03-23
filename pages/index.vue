@@ -126,6 +126,7 @@ export default {
 </script>
 
 <style>
+@import "vue-plyr/dist/vue-plyr.css";
 .about {
   background: url("~assets/images/balisvg.svg") no-repeat center;
 }
