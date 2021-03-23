@@ -5,16 +5,7 @@ module.exports = {
   },
   purge: {
     enabled: process.env.NODE_ENV === 'production',
-    content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js',
-      // TypeScript
-      'plugins/**/*.ts',
-      'nuxt.config.ts'
-    ]
+    content: []
   },
   theme: {
     fontFamily: {
@@ -48,5 +39,7 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }

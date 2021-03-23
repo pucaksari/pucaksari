@@ -26,7 +26,7 @@
             <Button class="my-12 lg:ml-20" to="#" text="Selengkapnya" />
           </div>
         </div>
-        <Gradient class="-mt-24 lg:-mt-32 md:-mt-32 md:block lg:block" />
+        <Gradient class="hidden -mt-24 lg:-mt-12 md:-mt-20 md:block lg:block" />
       </video-background>
     </div>
   </client-only>

@@ -20,7 +20,7 @@
           v-for="src in countImage"
           :key="src"
           class="h-64 overflow-hidden bg-center bg-no-repeat bg-cover gambar"
-          :style="{ backgroundImage: `url(${backgroundUrl(src)})` }"
+          :lazy-background="backgroundUrl(src)"
         >
           <img
             :src="require(`~/assets/images/galeri/${src}.jpg`)"

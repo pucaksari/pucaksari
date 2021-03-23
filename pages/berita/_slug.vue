@@ -1,15 +1,22 @@
 <template>
-  <h1>{{ this.slug }}</h1>
+  <div>
+    <header-article />
+    <div class="container">
+      <nuxt-content
+        class="px-10 prose md:prose-lg lg:prose-2xl"
+        :document="berita"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
+import HeaderArticle from "~/components/HeaderArticle.vue";
 export default {
-  async asyncData({ params }) {
-    const slug = params.slug; // When calling /abc the slug will be "abc"
-    return { slug };
+  components: { HeaderArticle },
+  async asyncData({ $content, params }) {
+    const berita = await $content("artikel", params.slug).fetch();
+    return { berita };
   },
 };
 </script>
-
-<style>
-</style>

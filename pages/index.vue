@@ -85,8 +85,23 @@
             Informasi, Pengumaman, Acara
           </h1>
           <div class="flex flex-col gs_reveal lg:flex-row lg:justify-between">
-            <Article />
-            <Article class="lg:-mt-84" />
+            <Article
+              :berita="{
+                judul: listBerita[0].judul,
+                tanggal: listBerita[0].tanggal,
+                deskripsi: listBerita[0].deskripsi,
+                slug: listBerita[0].slug,
+              }"
+            />
+            <Article
+              :berita="{
+                judul: listBerita[1].judul,
+                tanggal: listBerita[1].tanggal,
+                deskripsi: listBerita[1].deskripsi,
+                slug: listBerita[1].slug,
+              }"
+              class="lg:-mt-84"
+            />
           </div>
           <div class="z-10 flex justify-center mt-10 lg:justify-end lg:-mt-20">
             <Button to="berita" text="Selengkapnya" />
@@ -98,7 +113,17 @@
   </div>
 </template>
 
-
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const listBerita = await $content("artikel")
+      .sortBy("createdAt", "desc")
+      .limit(2)
+      .fetch();
+    return { listBerita };
+  },
+};
+</script>
 
 <style>
 .about {
