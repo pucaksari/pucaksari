@@ -1,4 +1,6 @@
 export default {
+  ssr: false,
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Pesona Pucak Sari',
@@ -63,7 +65,6 @@ export default {
     ['nuxt-lazy-load', {
       directiveOnly: true,
       defaultImage: '/default-image.png',
-      loadingClass: 'isLoading',
     }],
     '@nuxt/content'
   ],
