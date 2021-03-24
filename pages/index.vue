@@ -45,7 +45,9 @@
         <h1 class="mb-5 font-serif text-4xl reveal_fromLeft lg:text-5xl">
           Video
         </h1>
-        <div class="w-full video-js-responsive-container vjs-hd">
+        <div
+          class="w-full vjs-show-big-play-button-on-pause vjs-big-play-centered play-circle video-js-responsive-container vjs-hd"
+        >
           <!-- youtube div element -->
           <div
             class="video-player-box"
@@ -122,6 +124,7 @@ export default {
             src: "/title.mp4",
           },
         ],
+        poster: "cover.png",
       },
     };
   },
@@ -155,207 +158,5 @@ export default {
 }
 .about {
   background: url("~assets/images/balisvg.svg") no-repeat center;
-}
-.video-js {
-  outline: 0;
-}
-.video-js video.vjs-tech {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-  left: 50%;
-  height: 100%;
-  width: 100%;
-  outline: none;
-  cursor: pointer;
-}
-.video-js .vjs-big-play-button {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border: none;
-  border-radius: 100%;
-  outline: 0;
-  height: 3em;
-  width: 3em;
-  background-color: transparent;
-}
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3em;
-}
-.video-js .vjs-fullscreen-control {
-  display: none;
-}
-.video-js .vjs-custom-fullscreen {
-  position: absolute;
-  top: 15px;
-  right: 19px;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(43, 51, 63, 0.25);
-  z-index: 9;
-  outline: none;
-  cursor: pointer;
-}
-.video-js .vjs-custom-fullscreen:before {
-  font-family: "monstserrat";
-  font-weight: normal;
-  font-style: normal;
-  content: "\f108";
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-.video-js .vjs-progress-control,
-.video-js .vjs-remaining-time,
-.video-js .vjs-play-control,
-.video-js .vjs-volume-panel {
-  background-color: #707070;
-  outline: 0;
-}
-.video-js .vjs-progress-control .vjs-icon-placeholder:before,
-.video-js .vjs-remaining-time .vjs-icon-placeholder:before,
-.video-js .vjs-play-control .vjs-icon-placeholder:before,
-.video-js .vjs-volume-panel .vjs-icon-placeholder:before {
-  top: 50%;
-  height: auto;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.video-js .vjs-seek-to-live-control {
-  display: none;
-  background-color: #707070;
-}
-.video-js .vjs-progress-control .vjs-progress-holder {
-  background-color: #b5b5b5;
-}
-.video-js .vjs-progress-control .vjs-progress-holder .vjs-load-progress div {
-  background-color: #bdbdbd;
-}
-.video-js .vjs-progress-control .vjs-progress-holder .vjs-play-progress {
-  background: none;
-}
-.video-js .vjs-progress-control .vjs-progress-holder .vjs-play-progress:before {
-  top: -5px;
-  font-size: 1.4em;
-}
-.video-js .vjs-progress-control:hover .vjs-progress-holder {
-  font-size: 1.2em;
-}
-.video-js .vjs-play-control {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.video-js .vjs-remaining-time {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.video-js .vjs-control-bar {
-  width: 50%;
-  height: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 0;
-  border-radius: 20px;
-  opacity: 0.75;
-}
-.video-js .vjs-volume-panel-horizontal,
-.video-js .vjs-remaining-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.video-js .vjs-volume-panel-horizontal .vjs-remaining-time-display,
-.video-js .vjs-remaining-time .vjs-remaining-time-display {
-  font-size: 12px;
-}
-.video-js button.vjs-chapters-button {
-  display: none;
-}
-.video-js div.vjs-chapters-button {
-  position: absolute;
-  left: 50%;
-  bottom: 55px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  height: 8px;
-  width: auto;
-  z-index: 9;
-}
-.video-js div.vjs-chapters-button .vjs-menu {
-  display: block;
-  position: relative;
-  bottom: initial;
-  left: initial;
-  width: auto;
-  height: 100%;
-  margin-bottom: 0;
-  border-top-color: none;
-}
-.video-js div.vjs-chapters-button .vjs-menu.vjs-hidden {
-  display: block !important;
-}
-.video-js div.vjs-chapters-button .vjs-menu .vjs-menu-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  max-height: initial;
-  height: 100%;
-  bottom: initial;
-  background-color: none;
-  background-color: transparent;
-}
-.video-js div.vjs-chapters-button .vjs-menu .vjs-menu-content .vjs-menu-title {
-  display: none;
-}
-.video-js div.vjs-chapters-button .vjs-menu .vjs-menu-content .vjs-menu-item {
-  width: 89px;
-  padding: 0;
-  background-color: #707070;
-  opacity: 0.6;
-  outline: 0;
-}
-.video-js
-  div.vjs-chapters-button
-  .vjs-menu
-  .vjs-menu-content
-  .vjs-menu-item:not(:first-child):not(:nth-child(2)) {
-  margin-left: 17px;
-}
-.video-js
-  div.vjs-chapters-button
-  .vjs-menu
-  .vjs-menu-content
-  .vjs-menu-item.vjs-selected {
-  background-color: #ffd800;
-  opacity: 1;
-}
-.video-js
-  div.vjs-chapters-button
-  .vjs-menu
-  .vjs-menu-content
-  .vjs-menu-item
-  .vjs-menu-item-text {
-  display: none;
-}
-.video-js.vjs-user-inactive .vjs-custom-fullscreen,
-.video-js.vjs-user-inactive .vjs-chapters-button {
-  visibility: hidden;
 }
 </style>

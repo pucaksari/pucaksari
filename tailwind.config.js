@@ -35,7 +35,36 @@ module.exports = {
         '72': '18rem',
         '84': '21rem',
         '96': '24rem',
-      }
+      },
+      typography: () => ({
+        DEFAULT: {
+          css: {
+            th: {
+              color: '#ededed'
+            },
+            color: '#ededed',
+            h1: {
+              color: '#ededed'
+            },
+            h2: {
+              color: '#ededed'
+            },
+            h3: {
+              color: '#ededed'
+            },
+            h4: {
+              color: '#ededed'
+            },
+            h5: {
+              color: '#ededed'
+            },
+            h6: {
+              color: '#ededed'
+            },
+
+          }
+        }
+      })
     }
   },
   variants: {},

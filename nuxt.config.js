@@ -66,7 +66,7 @@ export default {
     '@nuxtjs/axios',
     ['nuxt-lazy-load', {
       directiveOnly: true,
-      defaultImage: '/default-image.png',
+      defaultImage: 'https://via.placeholder.com/728x500?text=loading',
     }],
     '@nuxt/content'
   ],

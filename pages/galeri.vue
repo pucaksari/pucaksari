@@ -19,8 +19,8 @@
         <div
           v-for="src in countImage"
           :key="src"
-          class="h-64 overflow-hidden bg-center bg-no-repeat bg-cover gambar"
-          :lazy-background="backgroundUrl(src)"
+          class="h-64 overflow-hidden bg-center bg-no-repeat bg-cover reveal gambar"
+          :style="`background-image: url(${backgroundUrl(src)}) `"
         >
           <img
             :src="require(`~/assets/images/galeri/${src}.jpg`)"
@@ -47,7 +47,6 @@
 import "viewerjs/dist/viewer.css";
 
 export default {
-  mounted() {},
   data() {
     return {
       countImage: 9,
@@ -67,3 +66,4 @@ export default {
   },
 };
 </script>
+

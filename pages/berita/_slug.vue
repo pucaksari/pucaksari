@@ -1,14 +1,25 @@
 <template>
   <div>
-    <header-article />
+    <header-article :berita="berita" />
     <div class="container">
       <nuxt-content
-        class="px-10 prose md:prose-lg lg:prose-2xl"
+        class="mx-auto prose md:prose-lg lg:prose-2xl"
         :document="berita"
       />
     </div>
   </div>
 </template>
+
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+</style>
 
 <script>
 import HeaderArticle from "~/components/HeaderArticle.vue";

@@ -12,22 +12,21 @@
 <script>
 export default {
   mounted() {
-    this.$gsap.utils.toArray(".gs_reveal").forEach((elem) => {
-      this.hide(elem); // assure that the element is hidden when scrolled into view
-
-      this.$ScrollTrigger.create({
-        trigger: elem,
-        onEnter: () => {
-          this.animateFrom(elem);
-        },
-        onEnterBack: () => {
-          this.animateFrom(elem, -1);
-        },
-        onLeave: () => {
-          this.hide(elem);
-        }, // assure that the element is hidden when scrolled into view
-      });
-    });
+    // this.$gsap.utils.toArray(".gs_reveal").forEach((elem) => {
+    //   this.hide(elem); // assure that the element is hidden when scrolled into view
+    //   this.$ScrollTrigger.create({
+    //     trigger: elem,
+    //     onEnter: () => {
+    //       this.animateFrom(elem);
+    //     },
+    //     onEnterBack: () => {
+    //       this.animateFrom(elem, -1);
+    //     },
+    //     onLeave: () => {
+    //       this.hide(elem);
+    //     }, // assure that the element is hidden when scrolled into view
+    //   });
+    // });
   },
   methods: {
     animateFrom(elem, direction) {
@@ -69,5 +68,11 @@ export default {
 .page-enter,
 .page-leave-to {
   opacity: 0;
+}
+.split-parent {
+  overflow: hidden;
+}
+.split-child {
+  display: inline-block;
 }
 </style>
