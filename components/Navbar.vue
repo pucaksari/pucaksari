@@ -12,11 +12,13 @@
     </div>
     <div class="flex">
       <div class="hidden grid-flow-col gap-16 lg:grid">
-        <nuxt-link prefetch to="/">Home</nuxt-link>
-        <nuxt-link prefetch to="/pura">Pura</nuxt-link>
-        <nuxt-link prefetch to="/komoditas">Komoditas</nuxt-link>
-        <nuxt-link prefetch to="/berita">Berita</nuxt-link>
-        <nuxt-link prefetch to="/galeri">Galeri</nuxt-link>
+        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/pura">Pura</nuxt-link>
+        <nuxt-link to="/komoditas">Komoditas</nuxt-link>
+        <nuxt-link active-class="nuxt-link-exact-active" to="/berita"
+          >Berita</nuxt-link
+        >
+        <nuxt-link to="/galeri">Galeri</nuxt-link>
       </div>
       <!-- Mobile Menu -->
       <div
@@ -82,7 +84,11 @@
           to="/komoditas"
           >Komoditas</nuxt-link
         >
-        <nuxt-link no-prefetch exact-active-class="mobile-active" to="/berita"
+        <nuxt-link
+          no-prefetch
+          exact-active-class="mobile-active"
+          active-class="mobile-active"
+          to="/berita"
           >Berita</nuxt-link
         >
         <nuxt-link no-prefetch exact-active-class="mobile-active" to="/galeri"
@@ -136,7 +142,6 @@ export default {
 .nuxt-link-exact-active {
   position: relative;
   overflow: hidden;
-
   z-index: 1;
 }
 

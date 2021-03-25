@@ -2,30 +2,9 @@
   <div>
     <hero-blank text="Pura" />
     <div class="container">
-      <Pura
-        nama="Pura Dalem"
-        deskripsi="Desa Pucaksari adalah salah satu Desa dari 14 Desa di Kecamatan
-          Busungbiu, Kabupaten Buleleng, Provinsi Bali. Sesuai dengan keadalam
-          alam Desa Pucaksari, bahwa bentuk datarannya adalah daratan tinggi
-          dengan ketinggian 600 - 800 meter di atas permukaan laut, dengan luas
-          wilayah 1442,175"
-      />
-      <Pura
-        nama="Pura Dalem"
-        deskripsi="Desa Pucaksari adalah salah satu Desa dari 14 Desa di Kecamatan
-          Busungbiu, Kabupaten Buleleng, Provinsi Bali. Sesuai dengan keadalam
-          alam Desa Pucaksari, bahwa bentuk datarannya adalah daratan tinggi
-          dengan ketinggian 600 - 800 meter di atas permukaan laut, dengan luas
-          wilayah 1442,175"
-      />
-      <Pura
-        nama="Pura Dalem"
-        deskripsi="Desa Pucaksari adalah salah satu Desa dari 14 Desa di Kecamatan
-          Busungbiu, Kabupaten Buleleng, Provinsi Bali. Sesuai dengan keadalam
-          alam Desa Pucaksari, bahwa bentuk datarannya adalah daratan tinggi
-          dengan ketinggian 600 - 800 meter di atas permukaan laut, dengan luas
-          wilayah 1442,175"
-      />
+      <Pura nama="Pura Dalem" />
+      <Pura nama="Pura Dalem" />
+      <Pura nama="Pura Dalem" />
     </div>
   </div>
 </template>

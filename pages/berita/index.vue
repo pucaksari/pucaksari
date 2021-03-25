@@ -3,14 +3,7 @@
     <hero-blank text="Berita baru di Desa" />
     <div class="container grid grid-cols-1 px-4 lg:px-0 lg:grid-cols-2">
       <div v-for="berita in listBerita" :key="berita.id">
-        <Article
-          :berita="{
-            judul: berita.judul,
-            tanggal: berita.tanggal,
-            deskripsi: berita.deskripsi,
-            slug: berita.slug,
-          }"
-        />
+        <Article :berita="berita" />
       </div>
     </div>
   </div>

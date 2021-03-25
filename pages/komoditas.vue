@@ -2,7 +2,10 @@
   <div>
     <hero-blank text="Komoditas Desa" />
     <div class="container mt-32">
-      <Komoditas />
+      <Komoditas
+        judul="Kopi Robusta"
+        deskripsi="Kini, Kelompok Tani Kutul Amerta Rahayu juga sudah memproduksi kopi dengan label Kopi Kutul Robusta.  Rata-rata hasil panen kopi pertahun di desa ini mencapai dua ton perhektar. Total lahan perkebunan kopi yang dikelola oleh 24 petani kopi desa setempat mencapai 100 hektar."
+      />
       <Komoditas />
     </div>
   </div>

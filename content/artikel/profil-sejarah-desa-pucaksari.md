@@ -1,8 +1,9 @@
 ---
 judul: Profil Sejarah Desa Pucaksari
 deskripsi: Deskripsi tentang profil, sejarah, dan apapun tentang Desa Pucaksari
-tanggal: 21 Maret 2021
+tanggal: 21 Mar 2021
 penulis: Surya Adhigamika
+judul_gambar: profil-pucaksari.jpg
 ---
 
 # Desa Pucaksari

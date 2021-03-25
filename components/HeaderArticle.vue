@@ -7,17 +7,20 @@
       >
         <div class="flex-col lg:w-1/2">
           <div class="flex place-items-center">
-            <span class="text-base">{{ berita.tanggal }}</span>
-            <div class="w-2/12 h-1 mx-5 lg:mx-10 lg:w-1/12 bg-red"></div>
-            <span class="text-base"> {{ berita.penulis }} </span>
+            <span class="text-xs lg:text-base">{{ berita.tanggal }}</span>
+            <div class="w-1/12 h-1 mx-3 lg:mx-10 lg:w-1/12 bg-red"></div>
+            <span class="text-xs lg:text-base"> {{ berita.penulis }} </span>
           </div>
           <h1
-            class="mt-10 -mb-10 font-serif text-4xl lg:ml-0 lg:m-6 md:text-5xl lg:text-5xl"
+            class="mt-10 font-serif text-4xl lg:ml-0 lg:m-6 md:text-5xl lg:text-5xl"
           >
             {{ berita.judul }}
           </h1>
         </div>
-        <div class="w-full lg:w-1/2 img-article"></div>
+        <div
+          class="w-full lg:w-1/2 img-article"
+          :style="`background-image: url(${imgSrc(berita.judul_gambar)})`"
+        ></div>
       </div>
       <Gradient class="-mx-4" />
     </div>
@@ -26,11 +29,17 @@
 
 <script>
 export default {
+  methods: {
+    imgSrc(src) {
+      return require(`~/assets/images/berita/${src}`);
+    },
+  },
   props: {
     berita: {
       tanggal: "",
       judul: "",
       deskripsi: "",
+      judul_gambar: "",
     },
   },
 };
@@ -39,7 +48,6 @@ export default {
 <style>
 .img-article {
   height: 400px;
-  background-image: url("~assets/images/galeri/21.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

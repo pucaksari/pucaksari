@@ -1,8 +1,9 @@
 ---
 judul: Bakti Sosial Teknologi Informasi Periode I Tahun 2021
 deskripsi: Kegiatan ini merupakan kegiatan pengabdian dengan cara memberikan bantuan kepada desa-desa dan sekolah-sekolah yang membutuhkan bantuan. 
-tanggal: 10 April 2021
-penulis: Surya Adhigamika
+tanggal: 10 Apr 2021
+penulis: Ismawati
+judul_gambar: baksos.jpg
 ---
 
 Pada hari Minggu, 10 April 2021 kegiatan Bakti Sosial Teknologi Informasi, Fakultas Teknik, Universitas Udayana melakukan kunjungan ke Desa Pucaksari, Kecamatan Busungbiu, Kabupaten Buleleng. Kegiatan ini merupakan kegiatan pengabdian dengan cara memberikan bantuan kepada desa-desa dan sekolah-sekolah yang membutuhkan bantuan. Mengusung tema “Mewujudkan Generasi Intelektual Dengan Menerapkan Ilmu Teknologi Informasi Demi Kesejahteraan Masyarakat″, diharapkan mampu mewujudkan generasi muda desa yang unggul dalam bidang IPTEK (Ilmu Pengetahuan dan Teknologi) untuk membangun kesejahteraan bersama.

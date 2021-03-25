@@ -31,11 +31,10 @@
           class="flex flex-col pb-24 mt-20 text-left border-b lg:mx-10 lg:flex-row lg:justify-between border-red"
         >
           <div class="flex flex-col mt-10 lg:w-4/12">
-            <h1 class="font-serif text-2xl lg:text-4xl">Pucak Sari</h1>
+            <h1 class="font-serif text-2xl lg:text-4xl">Pucaksari</h1>
             <p class="text-sm text-left lg:text-base">
-              Parawisely membantu kamu untuk memilih tempat wisata di Indonesia
-              yang kaya akan budaya dan keberagaman serta petualangan yang
-              menunggumu di Indonesia.
+              Pucaksari dipenuhi oleh tempat wisata yang kaya akan budaya dan
+              keberagaman serta petualangan yang menunggumu di Indonesia.
             </p>
           </div>
           <div class="flex flex-col mt-10 lg:w-4/12 lg:ml-32">

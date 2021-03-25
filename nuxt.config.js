@@ -3,7 +3,7 @@ export default {
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Pesona Pucak Sari',
+    title: 'Pesona Pucaksari',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,7 +17,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: 'Desa Pucaksari, di Kecamatan Busungbiu, salah satu desa yang terletak diatas ketinggian sekitar 650 diatas permukaan laut (dpl). Desa ini sejak lama, terkenal sebagai penghasil kopi jenis robusta'
       }
     ],
     link: [{

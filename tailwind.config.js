@@ -9,7 +9,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'serif': ['Mermaid', 'ui-serif'],
+      'serif': ['PlayfairDisplay', 'ui-serif'],
       'sans': ['Montserrat', 'ui-sans-serif']
     },
     colors: {
