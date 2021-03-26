@@ -11,7 +11,7 @@
       />
       <Komoditas
         judul="Peternakan"
-        deskripsi="Kini, Kelompok Tani Kutul Amerta Rahayu juga sudah memproduksi kopi dengan label Kopi Kutul Robusta.  Rata-rata hasil panen kopi pertahun di desa ini mencapai dua ton perhektar. Total lahan perkebunan kopi yang dikelola oleh 24 petani kopi desa setempat mencapai 100 hektar."
+        deskripsi="Sektor peternakan memiliki peranan penting dalam mewujudkan bangsa yang sejahtera dalam bidang perekonomian dan ketahanan pangan. Begitu pula aktivitas para penduduk di Desa Puncaksari. Hewan yang banyak diternakkan di Desa Pucaksari adalah domba. Hasil peternakan di antaranya daging dan susu. Selain itu, kotoran hewan dapat menyuburkan tanah."
         :gambar1="require(`@/assets/images/galeri/60.jpg`)"
         :gambar2="require(`@/assets/images/galeri/61.jpg`)"
         :gambar3="require(`@/assets/images/galeri/62.jpg`)"

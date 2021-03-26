@@ -85,7 +85,7 @@
           </h1>
           <div class="flex flex-col lg:flex-row lg:justify-between">
             <Article
-              class="lg:w-1/2"
+              class="w-full"
               :berita="{
                 judul: listBerita[0].judul,
                 tanggal: listBerita[0].tanggal,
@@ -102,7 +102,7 @@
                 slug: listBerita[1].slug,
                 judul_gambar: listBerita[1].judul_gambar,
               }"
-              class="lg:-mt-84"
+              class="w-full lg:-mt-84"
             />
           </div>
           <div class="flex justify-center mt-10 lg:justify-end lg:-mt-20">
