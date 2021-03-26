@@ -2,9 +2,11 @@
   <div>
     <hero-blank text="Pura" />
     <div class="container">
+      <Pura nama="Pura Pucak Luhur" />
       <Pura nama="Pura Dalem" />
-      <Pura nama="Pura Dalem" />
-      <Pura nama="Pura Dalem" />
+      <Pura nama="Pura Melanting" />
+      <Pura nama="Pura Yeh Sakti" />
+      <Pura nama="Pura Pakangaya" />
     </div>
   </div>
 </template>
