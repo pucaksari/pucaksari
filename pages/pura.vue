@@ -2,11 +2,26 @@
   <div>
     <hero-blank text="Pura" />
     <div class="container">
-      <Pura nama="Pura Pucak Luhur" />
-      <Pura nama="Pura Dalem" />
-      <Pura nama="Pura Melanting" />
-      <Pura nama="Pura Yeh Sakti" />
-      <Pura nama="Pura Pakangaya" />
+      <Pura
+        :gambarPura="require(`~/assets/images/pura/pucak-luhur.jpg`)"
+        nama="Pura Pucak Luhur"
+      />
+      <Pura
+        :gambarPura="require(`~/assets/images/pura/dalem.jpg`)"
+        nama="Pura Dalem"
+      />
+      <Pura
+        :gambarPura="require(`~/assets/images/pura/melanting.jpg`)"
+        nama="Pura Melanting"
+      />
+      <Pura
+        :gambarPura="require(`~/assets/images/pura/yeh-sakti.jpg`)"
+        nama="Pura Yeh Sakti"
+      />
+      <Pura
+        :gambarPura="require(`~/assets/images/pura/pakangaya.jpg`)"
+        nama="Pura Pakangaya"
+      />
     </div>
   </div>
 </template>

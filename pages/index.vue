@@ -62,7 +62,7 @@
       </div>
       <!-- End Video Section -->
       <!-- Gallery Section -->
-      <div class="flex flex-col justify-center mt-64 text-center">
+      <div class="flex flex-col justify-center mt-32 text-center lg:mt-64">
         <h1 class="font-serif text-4xl lg:text-5xl">Galeri Foto</h1>
         <div class="mx-auto my-5 lg:w-1/2">
           <p>
