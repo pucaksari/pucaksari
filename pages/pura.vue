@@ -20,7 +20,7 @@
       />
       <Pura
         :gambarPura="require(`~/assets/images/pura/pakangaya.jpg`)"
-        nama="Pura Pakangaya"
+        nama="Pura Pakang Aya"
       />
     </div>
   </div>
