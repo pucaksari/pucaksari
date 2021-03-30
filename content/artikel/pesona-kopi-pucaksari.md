@@ -1,6 +1,6 @@
 ---
-judul: Bakti Sosial Teknologi Informasi Periode I Tahun 2021
-deskripsi: Kegiatan ini merupakan kegiatan pengabdian dengan cara memberikan bantuan kepada desa-desa dan sekolah-sekolah yang membutuhkan bantuan. 
+judul: Pesona Kopi Pucaksari
+deskripsi: Desa ini sejak lama, terkenal sebagai penghasil kopi jenis robusta. Secara turun temurun
 tanggal: 10 Apr 2021
 penulis: Ismawati
 judul_gambar: Absen 4_Jarkom F_2005551014.jpeg
