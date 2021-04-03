@@ -40,16 +40,16 @@
           class="flex flex-col pb-24 mt-20 text-left border-b lg:mx-10 lg:flex-row lg:justify-between border-red"
         >
           <div class="flex flex-col mt-10 lg:w-4/12">
-            <h1 class="font-serif text-2xl lg:text-4xl">Pucaksari</h1>
+            <h1 class="mb-5 font-serif text-2xl lg:text-4xl">Pucaksari</h1>
             <p class="text-sm text-left lg:text-base">
               Pucaksari dipenuhi oleh tempat wisata yang kaya akan budaya dan
               keberagaman serta petualangan yang menunggumu di Indonesia.
             </p>
           </div>
           <div class="flex flex-col mt-10 lg:w-4/12 lg:ml-32">
-            <h1 class="font-serif text-2xl lg:text-4xl">Navigasi</h1>
+            <h1 class="mb-5 font-serif text-2xl lg:text-4xl">Navigasi</h1>
             <div class="grid grid-flow-row gap-2 text-sm lg:text-base">
-              <nuxt-link exact-active-class="none" to="//">Home</nuxt-link>
+              <nuxt-link exact-active-class="none" to="/">Home</nuxt-link>
               <nuxt-link exact-active-class="none" to="/pura">Pura</nuxt-link>
               <nuxt-link exact-active-class="none" to="/komoditas"
                 >Komoditas</nuxt-link
@@ -63,11 +63,13 @@
             </div>
           </div>
           <div class="flex flex-col mt-10 lg:w-4/12">
-            <h1 class="font-serif text-2xl lg:text-4xl">Kontak</h1>
+            <h1 class="mb-5 font-serif text-2xl lg:text-4xl">Kontak</h1>
             <div class="text-sm lg:text-base">
-              <p>Desa Angseri, Kecamatan Baturiti, Tabanan, Bali, Indonesia</p>
+              <p>
+                Desa Pucaksari, Kecamatan Busungbiu, Buleleng, Bali, Indonesia
+              </p>
               <div class="mt-12">
-                <a  href="http://wa.me/6283869624779">+62 838 6962 4779</a>
+                <a href="http://wa.me/6283869624779">+62 838 6962 4779</a>
               </div>
             </div>
           </div>
@@ -92,6 +94,10 @@ export default {
   },
   methods: {
     submitFormKeluhan() {
+      if (!this.keluhan)
+        return alert("Mohon isikan pesan anda terlebih dahulu");
+      if (this.keluhan.length < 10)
+        return alert("Isikan paling tidak 10 huruf pesan");
       const form = document.forms["form-keluhan"];
       this.loading = true;
       fetch(
@@ -101,9 +107,13 @@ export default {
         .then(() => {
           this.keluhan = "";
           this.loading = false;
-          alert("Keluhanmu sudah terkirim, Terimakasih sudah memberi masukan!");
+          alert("Pesanmu sudah diterima, Terimakasih sudah memberi pesan!");
         })
-        .catch(() => alert("Ada error, silahkan hubungi admin"));
+        .catch(() =>
+          alert(
+            "Pesanmu tidak terkirim dikarenakan error sistem, silahkan hubungi admin"
+          )
+        );
     },
   },
 };

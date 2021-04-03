@@ -81,7 +81,7 @@
         <div class="flex flex-col reveal_fromLeft">
           <span>KUMPULAN BERITA</span>
           <h1 class="font-serif text-2xl lg:w-6/12 lg:text-5xl">
-            Informasi, Pengumaman, Acara
+            Informasi, Pengumuman, Acara
           </h1>
           <div class="flex flex-col lg:flex-row lg:justify-between">
             <Article
