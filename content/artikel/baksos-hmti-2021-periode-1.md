@@ -2,7 +2,7 @@
 judul: Bakti Sosial Teknologi Informasi Periode I Tahun 2021
 deskripsi: Kegiatan ini merupakan kegiatan pengabdian dengan cara memberikan bantuan kepada desa-desa dan sekolah-sekolah yang membutuhkan bantuan. 
 tanggal: 10 Apr 2021
-penulis: Ismawati
+penulis: Isma Pramesti
 judul_gambar: baksos.jpg
 ---
 

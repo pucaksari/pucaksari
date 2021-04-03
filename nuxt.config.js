@@ -30,15 +30,10 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "~assets/css/global.css",
-    'video.js/dist/video-js.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{
-      src: '~/plugins/vue-video-player',
-      ssr: false
-    },
-    {
       src: '~/plugins/vue-video-background',
       ssr: false
     },
@@ -105,7 +100,7 @@ export default {
   build: {},
   loadingIndicator: {
     name: 'circle',
-    color: '#3B8070',
-    background: 'white'
+    color: '#fff',
+    background: 'black'
   }
 }

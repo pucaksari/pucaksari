@@ -49,15 +49,16 @@
         <h1 class="mb-5 font-serif text-4xl reveal_fromLeft lg:text-5xl">
           Video
         </h1>
-        <div
-          class="w-full vjs-show-big-play-button-on-pause vjs-big-play-centered play-circle video-js-responsive-container vjs-hd"
-        >
+        <div class="w-full yt-vid">
           <!-- youtube div element -->
-          <div
-            class="video-player-box"
-            :playsinline="playsinline"
-            v-video-player:myVideoPlayer="playerOptions"
-          ></div>
+          <iframe
+            class="video-frame"
+            src="https://www.youtube-nocookie.com/embed/9WVozY0ekKI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <!-- End Video Section -->
@@ -117,23 +118,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      // component options
-      playsinline: true,
-
-      // videojs options
-      playerOptions: {
-        sources: [
-          {
-            type: "video/mp4",
-            src: "/title.mp4",
-          },
-        ],
-        poster: "cover.png",
-      },
-    };
-  },
   async asyncData({ $content, params }) {
     const listBerita = await $content("artikel")
       .sortBy("createdAt", "desc")
@@ -145,22 +129,20 @@ export default {
 </script>
 
 <style>
-.video-js-responsive-container.vjs-hd {
-  padding-top: 56.25%;
-}
-.video-js-responsive-container.vjs-sd {
-  padding-top: 75%;
-}
-.video-js-responsive-container {
-  width: 100%;
+.yt-vid {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.video-js-responsive-container .video-js {
-  height: 100% !important;
-  width: 100% !important;
+.video-frame {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .about {
   background: url("~assets/images/balisvg.svg") no-repeat center;
